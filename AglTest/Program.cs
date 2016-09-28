@@ -23,7 +23,6 @@ namespace AglTest
         /// <returns></returns>
         private static async Task ListCatsAsync()
         {
-            var jsonHelper = new Newtonsoft.Json.JsonSerializer();
             var client = new System.Net.Http.HttpClient();
             
             var jsonFormatDefinition = new[] { new { name = "", gender = "", age = 0, pets = new[] { new { name = "", type = "" } } } };
